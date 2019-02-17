@@ -9,9 +9,7 @@ router.get('/', (req, res, next) => {
 router.get('/aboutme', (req, res, next) => {
   res.render('aboutme/index', { title: 'About Me' });
 });
-router.get('/resume', (req, res, next) => {
-  res.render('resume', { title: 'About Me' });
-});
+
 
 
 router.get('/contact', (req, res, next) => {
@@ -19,11 +17,14 @@ router.get('/contact', (req, res, next) => {
 });
 
 router.get('/projects', (req, res, next) => {
-  res.render('index', { title: 'Projects' });
+  res.render('projects/index', { title: 'Projects' });
+});
+router.get('/projects/details-1', (req, res, next) => {
+  res.render('projects/project1', { title: 'Projects' });
 });
 
 router.get('/services', (req, res, next) => {
-  res.render('index', { title: 'Services' });
+  res.render('services/index', { title: 'Services' });
 });
 
 module.exports = router;
