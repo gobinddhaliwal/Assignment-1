@@ -11,7 +11,7 @@ router.get('/aboutme', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('index', { title: 'Contact' });
+  res.render('contact/index', { title: 'Contact' });
 });
 //Configured Route for projects
 router.get('/projects', (req, res, next) => {
