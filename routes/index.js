@@ -5,11 +5,12 @@ let router = express.Router();
 router.get('/', (req, res, next) => {
   res.render('index', { title: 'Home' });
 });
+/*GET About me page*/
 
 router.get('/aboutme', (req, res, next) => {
   res.render('aboutme/index', { title: 'About Me' });
 });
-
+/*GET Contact page*/
 router.get('/contact', (req, res, next) => {
   res.render('contact/index', { title: 'Contact' });
 });

@@ -1,6 +1,8 @@
+<!-- Gobind Dhaliwal
+300975953
+Index of contact -->
 <% include ../partials/header.ejs %>
 
-<!-- Content goes here -->
 
 <div class="card" style="width: 18rem;align-content: center">
     <div class="card-body">
@@ -12,6 +14,7 @@
         </p>
     </div>
 </div>
+<!--A form to process the data and redirect to home page-->
 <form method="POST">
     <div class="form-group">
         <label for="firstName">First Name</label>
@@ -34,6 +37,8 @@
         <input type="text" class="form-control" id="message" placeholder="Enter Message">
     </div>
 
-    <button type="submit" href="/" class="btn btn-primary">Submit</button>
+    <a href="/">
+        <input type="button"  class="btn btn-primary" value="Submit" />
+     </a>
 </form>
 <% include ../partials/footer.ejs %>
